@@ -1,0 +1,67 @@
+
+* {
+    padding: 0; /* 重置內邊距 */
+    margin: 0; /* 重置外邊距 */
+    box-sizing: border-box; /* 包括邊框和內邊距在內的元素尺寸計算 */
+}
+
+body {
+    background-color: #3b36cc; /* 設定背景顏色 */
+    color: white; /* 設定文字顏色 */
+    display: flex; /* 使用 flex 佈局 */
+    flex-direction: row; /* 子元素排列方式為橫向 */
+    justify-content: center; /* 子元素水平置中 */
+    font-family: sans-serif; /* 設定字體 */
+}
+
+.wrapper {
+    width: 450px; /* 設定寬度 */
+    padding: 30px; /* 設定內邊距 */
+    background-color: #1a1a40; /* 設定背景顏色 */
+    border-radius: 5px; /* 設定圓角 */
+    margin-top: 20px; /* 設定上方外邊距 */
+    text-align: center; /* 文字置中對齊 */
+}
+
+.create-form {
+    height: 40px; /* 設定表單高度 */
+    width: 100%; /* 設定寬度為 100% */
+    margin: 25px 0; /* 設定上下外邊距 */
+    border: 1px solid #3b36cc; /* 設定邊框 */
+    display: flex; /* 使用 Flexbox 佈局 */
+}
+
+.create-form > input {
+    outline: none; /* 移除外框 */
+    border: none; /* 移除邊框 */
+    background: none; /* 設定背景為透明 */
+    color: white; /* 設定文字顏色 */
+    width: 100%; /* 寬度為 100% */
+    height: 100%; /* 高度為 100% */
+    padding: 10px; /* 設定內邊距 */
+}
+
+.create-form > button {
+    border: none; /* 移除邊框 */
+    background: #3b36cc; /* 設定按鈕背景顏色 */
+    color: white; /* 設定文字顏色 */
+    width: 50px; /* 設定寬度 */
+    height: 100%; /* 高度為 100% */
+    padding: pointer; /* 移除內邊距 */
+}
+
+.todo {
+    background-color: #3b36cc; /* 設定待辦事項背景顏色 */
+    height: 40px; /* 設定高度 */
+    padding: 0 10px; /* 上下內邊距為 0，左右內邊距為 10 像素 */
+    margin-top: 10px; /* 設定上方外邊距 */
+    border-radius: 5px; /* 設定邊角圓度 */
+    display: flex; /* 使用 Flexbox 佈局 */
+    justify-content: space-between; /* 將子元素兩端對齊 */
+    align-items: center; /* 子元素在交叉軸上居中對齊 */
+}
+
+.completed {
+    opacity: 0.4; /* 設定透明度 */
+    text-decoration: line-through 2px white; /* 設定文字刪除線 */
+}
